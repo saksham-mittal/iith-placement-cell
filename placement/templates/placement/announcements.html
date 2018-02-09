@@ -1,0 +1,11 @@
+<div>
+    <h1><a href="/">Announcement Page</a></h1>
+</div>
+
+{% for announcement in announcements %}
+    <div>
+        <h2><a href="">{{ announcement.announcement_title }}</a></h2>
+        <p>Date: {{ announcement.created_date }}</p>
+        <p>{{ announcement.announcement_text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
