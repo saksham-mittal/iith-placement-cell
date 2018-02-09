@@ -25,7 +25,10 @@ SECRET_KEY = 'curd9k6f8fdmn@*%baq3+5$go9j!1f!-f9_3+yrxb+1=2!fmsh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'iithplacementcell.pythonanywhere.com',
+    '127.0.0.1',
+]
 
 
 # Application definition
@@ -67,7 +70,6 @@ TEMPLATES = [
         },
     },
 ]
-
 
 WSGI_APPLICATION = 'iithPlacementCell.wsgi.application'
 
