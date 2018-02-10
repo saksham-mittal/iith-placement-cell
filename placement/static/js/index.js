@@ -9,3 +9,9 @@ $('.link-panel').hover(function() {
   $(this).children("p").css('color', '#a8a8a8');
   $(this).children("div").children("i").css('color', '#a8a8a8');
 });
+
+$('.read-more').click(function() {
+  var buttonValue = $(this).val();
+  $(this).siblings().text(buttonValue);
+  $(this).css('display', 'none');
+});
