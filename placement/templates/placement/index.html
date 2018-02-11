@@ -1,24 +1,28 @@
 {% load staticfiles %}
+
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    {% include 'placement/header.html' %}
+
+    <!-- Sidenav CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
     <!-- Custom css -->
     <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
 
-    <!-- Ionicons stylesheet -->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/ionicons-2.0.1/css/ionicons.css' %}">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:200, 400, 600, 800" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
     <title>IITH Placement Cell</title>
   </head>
   <body>
+
+    {% include 'placement/sidenav.html' %}
+
+    <div data-activates="slide-out" class="menu button-collapse p-3">
+      <div class="line mb-2"></div>
+      <div class="line mb-2"></div>
+      <div class="line"></div>
+    </div>
 
     <div id="parallax-container" class="container-fluid parallax p-0" data-parallax-bg-image="{% static 'images/back.jpg' %}" data-parallax-speed="0.9" data-parallax-direction="down">
       <div class="container-fluid overlay m-0">
@@ -136,26 +140,9 @@ The total outlay of these projects crosses 500 million, a creditable achievement
       <div class="fluid-container text-center" style="background-color: #151515; padding-top: 10px; padding-bottom: 10px; font-size: 11px; color: #939393;">
           COPYRIGHT <strong>&copy; <a href="http://www.iith.ac.in/" style='color: #d3d3d3;'>Indian Institute Of Technology, Hyderabad</a></strong> - 2018
       </div>
-  </div>
+    </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    {% include 'placement/footer.html' %}
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
-    <!-- This is for parallax effect -->
-    <script src="{% static 'js/parallax-background.min.js' %}"></script>
-
-    <script>
-    	(function ($) {
-
-        $('.parallax').parallaxBackground();
-
-    	})(jQuery);
-    </script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="{% static 'js/index.js' %}" type="text/javascript"></script>
   </body>
 </html>

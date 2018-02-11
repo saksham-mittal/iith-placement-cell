@@ -15,3 +15,7 @@ $('.read-more').click(function() {
   $(this).siblings().text(buttonValue);
   $(this).css('display', 'none');
 });
+
+$('.button-collapse').sideNav();
+
+$('.parallax').parallaxBackground();

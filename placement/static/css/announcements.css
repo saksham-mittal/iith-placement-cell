@@ -1,10 +1,26 @@
-body {
+body, html {
   padding: 0;
-  margin: 0;
+  margin: 0 !important;
   -webkit-font-smoothing: antialiased;
   font-family: 'Lato', sans-serif;
 }
 
+.menu {
+  position: fixed;
+  z-index: 90;
+  border-radius: 30px;
+  height: 57px;
+  width: 57px;
+  top: 30px;
+  left: 30px;
+  cursor: pointer;
+}
+
+.line {
+  width: 30px;
+  height: 2px;
+  background-color: #2a2a2a;
+}
 
 #welcome-heading {
   position: relative;

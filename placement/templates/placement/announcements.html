@@ -1,23 +1,28 @@
 {% load staticfiles %}
+
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    {% include 'placement/header.html' %}
+
+    <!-- Sidenav CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
     <!-- Custom css -->
     <link rel="stylesheet" type="text/css" href="{% static 'css/announcements.css' %}">
 
-    <!-- Ionicons stylesheet -->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/ionicons-2.0.1/css/ionicons.css' %}">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
     <title>Anouncements|IITH Placement Cell</title>
   </head>
   <body>
+
+    {% include 'placement/sidenav.html' %}
+
+    <div data-activates="slide-out" class="menu button-collapse p-3">
+      <div class="line mb-2"></div>
+      <div class="line mb-2"></div>
+      <div class="line"></div>
+    </div>
 
     <div class="conatiner-fluid m-0 p-0 text-center" id="top-container">
       <div class="container-fluid col-xl-8 offset-xl-2">
@@ -30,7 +35,6 @@
     </div>
 
     <div class="conatiner p-5 col-xl-8 offset-xl-2">
-      {% block content %}
 
       {% for announcement in announcements %}
         <div class="announcement-container bg-light">
@@ -38,15 +42,14 @@
             <h1 class="announcement-heading">{{ announcement.announcement_title }}</h1>
             <div id="dash"></div>
           </div>
-          <p class="pl-5 pr-5"><span style="font-weight: 600;">Date announced:</span><i> {{ announcement.created_date }}</i></p>
-          <div class="announcement-body pl-5 pr-5 pb-5 mb-5">
+          <p class="lead pl-5 pr-5" style="font-size: 17px;"><span style="font-weight: 600;">Date announced:</span><i> {{ announcement.created_date }}</i></p>
+          <div class="lead announcement-body pl-5 pr-5 pb-5 mb-5">
             <p>{{ announcement.announcement_text|safe|truncatewords:"50"|linebreaks }}</p>
-            <button type="button" class="btn btn-dark read-more" style="background-color: #cad2d9; border: none; font-size: 15px; color: #3f3f3f;" value="{{ announcement.announcement_text|safe }}">Read More</button>
+            <button type="button" class="p-2 read-more" style="background-color: #cad2d9; border-radius: 4px; border: none; font-size: 15px; color: #3f3f3f;" value="{{ announcement.announcement_text|safe }}">Read More</button>
           </div>
         </div>
       {% endfor %}
 
-      {% endblock %}
     </div>
 
     <div class="container-fluid p-0 m-0" style="background-color: #2a2a2a;">
@@ -74,22 +77,7 @@
       </div>
   </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    {% include 'placement/footer.html' %}
 
-    <!-- This is for parallax effect -->
-    <script src="{% static 'js/parallax-background.min.js' %}"></script>
-
-    <script>
-    	(function ($) {
-
-        $('.parallax').parallaxBackground();
-
-    	})(jQuery);
-    </script>
-
-    <!-- Optional JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="{% static 'js/index.js' %}" type="text/javascript"></script>
   </body>
 </html>
