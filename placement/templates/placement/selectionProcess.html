@@ -1,0 +1,66 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        {% include 'placement/header.html' %}
+
+        <title>Selection Process|IITH Placement Cell</title>
+
+        <!-- Custom css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/externalCss.css' %}">
+
+    </head>
+    <body>
+
+      {% include 'placement/sidenav.html' %}
+
+      <div data-activates="slide-out" class="menu button-collapse p-3">
+        <div class="line mb-2"></div>
+        <div class="line mb-2"></div>
+        <div class="line"></div>
+      </div>
+
+        <div class="bg"></div>
+        <div class="container-fluid p-0 mb-0 text-center" id="top-container">
+          <div class="container-fluid col-xl-8 offset-xl-2">
+            <h1 id="welcome-heading">Programmes & Selection Process</h1>
+          </div>
+
+          <div class="container-fluid col-xl-4 offset-xl-4 mt-2">
+            <p id="name-heading">Indian Institute of Technology Hyderabad</p>
+          </div>
+        </div>
+
+        <div class="fluid-container mb-0 pb-5" style="background-color: #F5F6F9; padding-top: 100px;">
+          <div class="container content-process lead pb-5">
+            <span style="font-weight: 600;">Undergraduate( B.TECH )</span><br>
+            Duration: 4 years<br>
+            Qualifying Test : IIT-JEE<br>
+            Minor & Honours: Option to earn an Honours degree (in the same department) or a Minor degree (in another department.). This requires taking an additional five specially selected courses.
+            <br><br>
+            <span style="font-weight: 600;">Graduate(M.Tech)</span><br>
+            Duration: 2 years<br>
+            Thesis duration: 1 year<br>
+            Assistantship: Affiliated to course instructors or research projects.<br>
+            Qualifying Test : GATE(Graduate Aptitude Test in Engineering).
+            <br><br>
+            <span style="font-weight: 600;">Graduate(M.Sc.)</span><br>
+            Duration: 2 years<br>
+            M.Sc. project duration: 1 year.<br>
+            Qualifying Test : JAM(Joint Admission Test For MSc).
+            <br><br>
+            <span style="font-weight: 600;">Doctoral Programme</span><br>
+            The PhD programme gives an opportunity to enthusiastic researchers to take up open-ended research problems. Both computational as well as experimental works addressing engineering and scientific complexities and concepts are undertaken to meet the needs of the industry and academia alike.<br>
+            Selection : Students with good academic background are admitted into the programme through a rigorous interview. Assistantship for regular PhD students is provided by MHRD.<br><br>
+          </div>
+        </div>
+
+        {% include 'placement/footer.html' %}
+
+    </body>
+
+</html>

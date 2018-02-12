@@ -1,0 +1,87 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        {% include 'placement/header.html' %}
+
+        <title>Internships|IITH Placement Cell</title>
+
+        <!-- Custom css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/externalCss.css' %}">
+
+    </head>
+    <body>
+
+      {% include 'placement/sidenav.html' %}
+
+      <div data-activates="slide-out" class="menu button-collapse p-3">
+        <div class="line mb-2"></div>
+        <div class="line mb-2"></div>
+        <div class="line"></div>
+      </div>
+
+        <div class="bg"></div>
+        <div class="container-fluid p-0 mb-0 text-center" id="top-container">
+          <div class="container-fluid col-xl-8 offset-xl-2">
+            <h1 id="welcome-heading">SUMMER INTERNSHIP PROGRAM</h1>
+          </div>
+
+          <div class="container-fluid col-xl-4 offset-xl-4 mt-2">
+            <p id="name-heading">Indian Institute of Technology Hyderabad</p>
+          </div>
+        </div>
+
+        <div class="fluid-container pb-5" style="background-color: #F5F6F9; padding-top: 100px;">
+            <div class="container content-process pt-5 lead mb-5 pb-5">
+
+                <span style="font-weight: 600;">Time:</span> The internships for undergraduate students will be during the summer vacation months (May, June, July). Usually, the duration will be 8 to 10 weeks.<br><br>
+                <span style="font-weight: 600;">Eligibility:</span> The students who finished the 6th semester and going to 7th semester will be eligible. The second-year students who finished the 4th semester and going to 6th semester are also eligible if the company agrees.<br><br>
+                <span style="font-weight: 600;">Process:</span> The internship selection process will start in the month of January. Companies have to register in our AIMS portal and mention details of internship (such as eligibility criteria, location of work, profile of work, any allowance/stipend, travel support, accommodation etc.)<br><br>
+                <span style="font-weight: 600;">Selection:</span> Based on the details student will apply for internships, and some kind of selection process needs to be done to finalize. <br><br>
+                <span style="font-weight: 600;">Arrangements:</span> In the case of international internships for the final selected students travel arrangements need to be provided.<br><br>
+                <span style="font-weight: 600;">PPO (pre-placement offer):</span> If the company likes the student doing the internship, they can offer a permanent job to the student called PPO  within two months of completion of the internship. If the student accepts the PPO they can complete their studies at IITH and join the company.<br><br>
+                <br><br>
+                On an average more than 70% students have shown a keen interest in the internships which indicates their inclination to obtain a practical experience of the subject in the real time industry setting. We have some of the reputed companies and universities for the year’s interns such as:<br><br>
+                <div class="row">
+                    <div class="col-6">
+                        1. Apex Plus<br><br>
+                        2. Autodesk<br><br>
+                        3. Boeing<br><br>
+                        4. Amazon<br><br>
+                        5. Boston Scientific<br><br>
+                        6. Continental<br><br>
+                        7. Arcesium<br><br>
+                        8. Samsung Banglore<br><br>
+                        9. Chronus<br><br>
+                        10.Great Four<br><br>
+                        11. Volante<br><br>
+                        12. Philips Bangalore<br><br>
+                        13. Progress Software<br><br>
+                        14. Qualcomm<br><br>
+                        15. TCS<br><br>
+                    </div>
+                    <div class="col-6">
+                        16. Salesforce<br><br>
+                        17.Tata Sons<br><br>
+                        18. Wipro<br><br>
+                        19. Tata Steel<br><br>
+                        20. Zuti<br><br>
+                        21. Rakshak Foundation<br><br>
+                        22.Works App<br><br>
+                        23. UnitedHealth Group<br><br>
+                        24. Uurmi<br><br>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        {% include 'placement/footer.html' %}
+
+    </body>
+
+</html>

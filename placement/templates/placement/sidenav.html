@@ -11,9 +11,9 @@
                       <img class="circle" src="{% static 'images/iithLogo.png' %}" style="margin-left: 90px;">
                   </div>
               </li>
-              <li><a class="waves-effect" href="placement-process.html">Placement Process</a></li>
-              <li><a class="waves-effect" href="internship.html">Internships</a></li>
-              <li><a class="waves-effect" href="#!">Important Dates</a></li>
+              <li><a class="waves-effect" href="{% url 'placement:placementProcess' %}">Placement Process</a></li>
+              <li><a class="waves-effect" href="{% url 'placement:internships' %}">Internships</a></li>
+              <li><a class="waves-effect" href="{% url 'placement:announcements' %}">Announcements</a></li>
               <li class="pl-3">
                   <ul class="collapsible collapsible-accordion">
                       <li>
@@ -48,8 +48,8 @@
               </li>
               <li><a class="waves-effect" href="http://academics.iith.ac.in/">Academics</a></li>
               <li><a href="under-construction.html" class="waves-effect">Placement Statistics</a></li>
-              <li><a href="selectionProcess.html" class="waves-effect">Selection Process</a></li>
-              <li><a class="waves-effect" href="student-life.html">Student Life</a></li>
+              <li><a href="{% url 'placement:selectionProcess' %}" class="waves-effect">Selection Process</a></li>
+              <li><a class="waves-effect" href="{% url 'placement:studentLife' %}">Student Life</a></li>
               <li><a class="waves-effect" href="http://global-shirucafe.com/stores/iit_HYDERABAD.php">SHIRU CAFE</a></li>
               <li class="pl-3">
                   <ul class="collapsible collapsible-accordion">
@@ -66,9 +66,9 @@
                   </ul>
               </li>
               <li><div class="divider"></div></li>
-              <li><a class="waves-effect" href="contactUs.html">Contact Us</a></li>
-              <li><a class="waves-effect" href="hotelsnearIITH.html">Hotels near IITH</a></li>
-              <li><a class="waves-effect" href="credits.html">Website credits</a></li>
+              <li><a class="waves-effect" href="{% url 'placement:contactUs' %}">Contact Us</a></li>
+              <li><a class="waves-effect" href="{% url 'placement:hotelsnearIITH' %}">Hotels near IITH</a></li>
+              <li><a class="waves-effect" href="{% url 'placement:credits' %}">Website credits</a></li>
           </ul>
       </div>
 {% endblock %}

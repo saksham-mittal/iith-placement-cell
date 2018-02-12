@@ -1,0 +1,52 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        {% include 'placement/header.html' %}
+
+        <title>Credits|IITH Placement Cell</title>
+
+        <!-- Custom css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/externalCss.css' %}">
+
+    </head>
+    <body>
+
+      {% include 'placement/sidenav.html' %}
+
+      <div data-activates="slide-out" class="menu button-collapse p-3">
+        <div class="line mb-2"></div>
+        <div class="line mb-2"></div>
+        <div class="line"></div>
+      </div>
+
+        <div class="bg"></div>
+        <div class="container-fluid p-0 mb-0 text-center" id="top-container">
+          <div class="container-fluid col-xl-8 offset-xl-2">
+            <h1 id="welcome-heading">Website Credits</h1>
+          </div>
+
+          <div class="container-fluid col-xl-4 offset-xl-4 mt-2">
+            <p id="name-heading">Indian Institute of Technology Hyderabad</p>
+          </div>
+        </div>
+
+        <div class="fluid-container mb-0 pb-5" style="background-color: #F5F6F9; padding-top: 150px;">
+            <div class="container content-process lead mb-5 pb-5">
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-5"><span style="font-weight: 500;">SAKSHAM MITTAL</span><br>Computer Science and Engineering<br>B.Tech<br>Email: <a href="mailto:cs16btech11032@iith.ac.in">cs16btech11032@iith.ac.in</a></div>
+                    <div class="col-12 col-md-6 mb-5"><span style="font-weight: 500;">HARSHIT PATEL</span><br>Computer Science and Engineering<br>B.Tech<br>Email: <a href="mailto:cs16btech11017@iith.ac.in">cs16btech11017@iith.ac.in</a></div>
+                    <div class="col-12 col-md-6 mb-5"><span style="font-weight: 500;">OM SITAPARA</span><br>Computer Science and Engineering<br>B.Tech<br>Email: <a href="mailto:cs16btech11036@iith.ac.in">cs16btech11036@iith.ac.in</a></div>
+                </div>
+            </div>
+        </div>
+
+        {% include 'placement/footer.html' %}
+
+    </body>
+
+</html>

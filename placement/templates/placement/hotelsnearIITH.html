@@ -1,0 +1,69 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        {% include 'placement/header.html' %}
+
+        <title>Hotels Near IITH|IITH Placement Cell</title>
+
+        <!-- Custom css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/externalCss.css' %}">
+
+    </head>
+    <body>
+
+      {% include 'placement/sidenav.html' %}
+
+      <div data-activates="slide-out" class="menu button-collapse p-3">
+        <div class="line mb-2"></div>
+        <div class="line mb-2"></div>
+        <div class="line"></div>
+      </div>
+
+        <div class="bg"></div>
+        <div class="container-fluid p-0 mb-0 text-center" id="top-container">
+          <div class="container-fluid col-xl-8 offset-xl-2">
+            <h1 id="welcome-heading">HOTELS NEAR IITH</h1>
+          </div>
+
+          <div class="container-fluid col-xl-4 offset-xl-4 mt-2">
+            <p id="name-heading">Indian Institute of Technology Hyderabad</p>
+          </div>
+        </div>
+
+        <div class="fluid-container pb-5" style="background-color: #F5F6F9; padding-top: 100px;">
+          <div class="container content-process pt-5 lead pb-5">
+            <p class="heading-recruitment">Area: SANGAREDDY</p>
+            <p class="lead">
+            <b>Hotel Redla's Inn</b> (Approximate distance from institute: 5 Kms) Manjeera Nagar, Main Road, Above Reliance Fresh, Sangareddy – 502 001. <br>
+              <b>Phone No</b>: 08455 – 277700, 277701 & 277702  <br>
+              <b>Mobile</b>: 76600 22027, 76600 22026  <br>
+              <b>Email</b>: bookings@redlas.in, gm@redlas.in, www.redlas.in  <br>
+            <br><br>
+            <b>Manjeera Hotel</b> (Approximate distance from institute: 3.5 Kms) Opp. Rural Police Station, Sangareddy X Road, Sangareddy – 502 2001 <br>
+              <b>Ph. No.</b> 99488 82222, 98480 88122, 08455 272666  <br>
+             <br><br>
+            <b>Sri Sai Krishna Lodge</b> (Approximate distance from institute: 3.5 Kms) Above Janapriya Hotel, Sangareddy Junction, Sangareddy – 502 001 <br>
+              <b>Mobile</b>: 77027 47730, 90527 67606 <br>
+            </p>
+            <br><hr><br>
+            <p class="heading-recruitment">Area: ISNAPUR</p>
+            <p class="lead">
+            <b>Hotel Squar Inn</b> (Approximate distance from institute: 15 Kms) # 2-55, Squar Inn Building, Isnapur X Roads, Patancheru (M), Medak Dist., Telangana – 502 307.<br>
+              <b>Phone No</b>: 08455 225567, 9493 42 5555  <br>
+            <br><br>
+            <b>Hotel Pankaj Palace</b>(Approximate distance from institute: 15 Kms) Ratan Towers #8-48, Muthangi (V) Patancheru (M), NH-9, Isnapur X Road Medak Dist., Telangana – 502 307.<br>
+              <b>Ph. No.</b> 08455 225033, 93939 66033<br>
+             <br><br>
+          </div>
+        </div>
+
+        {% include 'placement/footer.html' %}
+
+    </body>
+
+</html>

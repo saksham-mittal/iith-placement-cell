@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Lato', sans-serif;
+}
+
+a, a:active, a:visited {
+  text-decoration: none !important;
+}
+
+.jumbotron {
+  width: 100%;
+  height: 680px;
+  background-color: transparent;
+}
+
+.menu {
+  position: fixed;
+  z-index: 90;
+  border-radius: 30px;
+  height: 57px;
+  width: 57px;
+  top: 30px;
+  left: 30px;
+  cursor: pointer;
+}
+
+.line {
+  width: 30px;
+  height: 2px;
+  background-color: #2a2a2a;
+}
+
+#welcome-heading {
+  position: relative;
+  width: 100%;
+  letter-spacing: 0.55px;
+  color: #2a2a2a;
+  font-family: 'Lato', sans-serif;
+  font-size: 59px;
+  font-weight: bold;
+  top: 177px;
+  text-transform: uppercase;
+}
+
+#name-heading {
+  position: relative;
+  width: 100%;
+  letter-spacing: 0.8px;
+  color: #2a2a2a;
+  font-size: 18px;
+  font-weight: 200;
+  top: 180px;
+}
+
+#top-container {
+  height: 500px;
+  background-color: #D8D8D8;
+}
+
+.list-items {
+  color: #3F3F3F !important;
+  font-weight: 300 !important;
+}
+
+.content-process {
+  color: #262626;
+}
+
+.heading-recruitment {
+  font-family: 'Raleway', sans-serif;
+  line-height: 55px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #262626;
+  font-weight: 300;
+  font-size: 26px;
+}
+.img-recruit {
+  height: 200px;
+}
+
+@media (min-width: 768px) {
+
+}

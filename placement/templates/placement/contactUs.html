@@ -1,0 +1,131 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        {% include 'placement/header.html' %}
+
+        <title>Contact Us|IITH Placement Cell</title>
+
+        <!-- Custom css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/externalCss.css' %}">
+
+    </head>
+    <body>
+
+      {% include 'placement/sidenav.html' %}
+
+      <div data-activates="slide-out" class="menu button-collapse p-3">
+        <div class="line mb-2"></div>
+        <div class="line mb-2"></div>
+        <div class="line"></div>
+      </div>
+
+        <div class="bg"></div>
+        <div class="container-fluid p-0 mb-0 text-center" id="top-container">
+          <div class="container-fluid col-xl-8 offset-xl-2">
+            <h1 id="welcome-heading">CONTACT US</h1>
+          </div>
+
+          <div class="container-fluid col-xl-4 offset-xl-4 mt-2">
+            <p id="name-heading">Indian Institute of Technology Hyderabad</p>
+          </div>
+        </div>
+
+        <div class="fluid-container mb-0 pb-5" style="background-color: #F5F6F9; padding-top: 100px;">
+              <div class="container content-process lead pb-5">
+                  <div class="row">
+                      <div class="col-12 col-md-4">
+                          <p class="lead" style="font-weight: 400; font-size: 26px">Address: </p>
+                          <p class="lead">
+                          Training & Placement Cell<br>
+                          Indian Institute of Technology, Hyderabad<br>
+                          Kandi Mandal, Sangareddy District,<br>
+                          Telangana, India - 502 284.<br>
+                              <br><br>
+                          Email :<a href="mailto:placement@iith.ac.in">placement@iith.ac.in</a><br><br>
+                          </p>
+                      </div>
+                      <div class="col-12 col-md-7 offset-md-1" id="map" style="width: 100%; height: 570px;"></div>
+                  </div>
+                  <br><br>
+                  <hr>
+                  <br><br>
+                  <div class="row">
+                      <div class="col-12 col-md-6">
+                          <p class="lead" style="font-weight: 400; font-size: 26px">Faculty In-Charge : </p>
+                          <p class="lead">
+                          <i class="contact-icons icon ion-person"></i>&nbsp;&nbsp; Dr. Pradeep Yemula<br>
+                          <i class="contact-icons icon ion-email"></i>&nbsp;&nbsp; <a href="mailto:ypradeep@iith.ac.in">ypradeep@iith.ac.in</a><br>
+                          <i class="contact-icons icon ion-ios-telephone"></i>&nbsp;&nbsp; 040 2301 6098<br><br>
+                          </p>
+                      </div>
+                      <div class="col-12 col-md-6">
+                          <p class="lead" style="font-weight: 400; font-size: 26px">Placement Team: </p>
+                          <p class="lead">
+                          <i class="contact-icons icon ion-person"></i>&nbsp;&nbsp; Archana Singh<br>
+                          <i class="contact-icons icon ion-email"></i>&nbsp;&nbsp; <a href="mailto:archanasingh@iith.ac.in">archanasingh@iith.ac.in</a><br>
+                          <i class="contact-icons icon ion-ios-telephone"></i>&nbsp;&nbsp; 040 2301 6098 <br><br>
+                          </p>
+                          <p class="lead">
+                          <i class="contact-icons icon ion-person"></i>&nbsp;&nbsp; Atheeq Hussain<br>
+                          <i class="contact-icons icon ion-email"></i>&nbsp;&nbsp; <a href="mailto:atheeqhussain@iith.ac.in">atheeqhussain@iith.ac.in</a><br>
+                          <i class="contact-icons icon ion-ios-telephone"></i>&nbsp;&nbsp; 040 2301 6098 <br><br>
+                          </p>
+                          <p class="lead">
+                          <i class="contact-icons icon ion-person"></i>&nbsp;&nbsp; A. Pranitha <br>
+                          <i class="contact-icons icon ion-email"></i>&nbsp;&nbsp; <a href="mailto:pranitha@iith.ac.in">pranitha@iith.ac.in</a><br>
+                          <i class="contact-icons icon ion-ios-telephone"></i>&nbsp;&nbsp; 040 2301 6098 <br><br>
+                          </p>
+                          <p class="lead">
+                          <i class="contact-icons icon ion-person"></i>&nbsp;&nbsp; Vijay K<br>
+                          <i class="contact-icons icon ion-email"></i>&nbsp;&nbsp; <a href="mailto:vijayakumarh@iith.ac.in">xxx@iith.ac.in</a><br>
+                          <i class="contact-icons icon ion-ios-telephone"></i>&nbsp;&nbsp; xxx xxxx xxxx<br><br>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+        {% include 'placement/footer.html' %}
+
+        <!-- Javascript for map -->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBScXT-FpInO1bdeFEzehr7PtLMlglTGS4&callback=initMap"></script>
+        <script type="text/javascript">
+
+            function initMap() {
+
+                var location = {lat: 17.594703, lng: 78.123105};
+                var map = new google.maps.Map(document.getElementById("map"),{
+                    zoom: 15,
+                    center: location
+                });
+                var marker = new google.maps.Marker({
+                    position: location,
+                    map: map
+                });
+                var contentString = '<div class="info-window">' +
+                    '<h3 class="info-window-heading pt-2 pl-2 pr-2 pb-0 mb-0"><img class="pr-2" src="iithLogo.png" style="width: 50px;">IIT Hyderabad</h3>' +
+                    '<div class="info-content pl-2 pr-2 pt-2">' +
+                    '<p><span><i class="icon ion-location" style="color: #3185FF; font-size: 20px;"></i>&nbsp;&nbsp;IITH Main Road, Near NH-65, Sangareddy, Khandi, Telangana 502285</span><br><br><span><i class="icon ion-earth" style="color: #3185FF; font-size: 20px;"></i>&nbsp;&nbsp;<a href="http://www.iith.ac.in/">[Official Website]</a></span><br><br><span><i class="icon ion-ios-telephone" style="color: #3185FF; font-size: 20px;"></i>&nbsp;&nbsp;040 2301 6033</span></p>'
+                    '</div>' +
+                    '</div>';
+
+                var infowindow = new google.maps.InfoWindow({
+                    content: contentString,
+                    maxWidth: 400
+                });
+
+                marker.addListener('click', function () {
+                    infowindow.open(map, marker);
+                });
+            }
+
+        </script>
+
+    </body>
+
+</html>

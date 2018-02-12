@@ -6,9 +6,6 @@
 
     {% include 'placement/header.html' %}
 
-    <!-- Sidenav CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-
     <!-- Custom css -->
     <link rel="stylesheet" type="text/css" href="{% static 'css/announcements.css' %}">
 
@@ -26,7 +23,7 @@
 
     <div class="conatiner-fluid m-0 p-0 text-center" id="top-container">
       <div class="container-fluid col-xl-8 offset-xl-2">
-        <h1 id="welcome-heading">Announcement Page</h1>
+        <h1 id="welcome-heading">ANNOUNCEMENTS PAGE</h1>
       </div>
 
       <div class="container-fluid col-xl-4 offset-xl-4 mt-2">
@@ -51,31 +48,6 @@
       {% endfor %}
 
     </div>
-
-    <div class="container-fluid p-0 m-0" style="background-color: #2a2a2a;">
-      <div class="row pt-5 pb-3 p-0">
-          <div class="col-xl-2 offset-xl-1 text-center"><a href="{% url 'placement:index' %}" style="color: #fff;">Home</a></div>
-          <div class="col-xl-2 text-center"><a href="https://www.iith.ac.in/" style="color: #fff;">IIT Hyderabad</a></div>
-          <div class="col-xl-2 text-center"><a href="ReachIITH.pdf" style="color: #fff;">Reaching IITH</a></div>
-          <div class="col-xl-2 text-center"><a href="credits.html" style="color: #fff;">Credits</a></div>
-          <div class="col-xl-2 text-center"><a href="contactUs.html" style="color: #fff;">Contact Us</a></div>
-      </div>
-
-      <div class="container-fluid pt-2 pb-3">
-        <center>
-          <p style="font-size: 25px; float: none; color: #fff;">
-            <a><i class="icon ion-social-facebook-outline"></i></a>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a><i class="icon ion-social-twitter-outline"></i></a>                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a><i class="icon ion-social-googleplus-outline"></i></a>
-          </p>
-        </center>
-      </div>
-
-      <div class="fluid-container text-center" style="background-color: #151515; padding-top: 10px; padding-bottom: 10px; font-size: 11px; color: #939393;">
-          COPYRIGHT <strong>&copy; <a href="http://www.iith.ac.in/" style='color: #d3d3d3;'>Indian Institute Of Technology, Hyderabad</a></strong> - 2018
-      </div>
-  </div>
 
     {% include 'placement/footer.html' %}
 
