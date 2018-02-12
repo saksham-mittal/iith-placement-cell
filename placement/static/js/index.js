@@ -12,7 +12,7 @@ $('.link-panel').hover(function() {
 
 $('.read-more').click(function() {
   var buttonValue = $(this).val();
-  $(this).siblings().text(buttonValue);
+  $(this).siblings().html(buttonValue);
   $(this).css('display', 'none');
 });
 

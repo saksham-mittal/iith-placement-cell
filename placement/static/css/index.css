@@ -5,6 +5,10 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+a, a:hover, a:visited {
+  text-decoration: none !important;
+}
+
 .menu {
   position: fixed;
   z-index: 90;

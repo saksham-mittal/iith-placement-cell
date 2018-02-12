@@ -38,14 +38,14 @@
 
       {% for announcement in announcements %}
         <div class="announcement-container bg-light">
-          <div class="text-center m-5 pt-5">
+          <div class="text-center m-5 pt-3">
             <h1 class="announcement-heading">{{ announcement.announcement_title }}</h1>
             <div id="dash"></div>
           </div>
           <p class="lead pl-5 pr-5" style="font-size: 17px;"><span style="font-weight: 600;">Date announced:</span><i> {{ announcement.created_date }}</i></p>
           <div class="lead announcement-body pl-5 pr-5 pb-5 mb-5">
-            <p>{{ announcement.announcement_text|safe|truncatewords:"50"|linebreaks }}</p>
-            <button type="button" class="p-2 read-more" style="background-color: #cad2d9; border-radius: 4px; border: none; font-size: 15px; color: #3f3f3f;" value="{{ announcement.announcement_text|safe }}">Read More</button>
+            <p>{{ announcement.announcement_text|safe|truncatewords:"50" }}</p>
+            <button type="button" class="p-2 read-more" style="background-color: #cad2d9; border-radius: 4px; border: none; font-size: 15px; color: #3f3f3f;" value="{{ announcement.announcement_text|safe|linebreaks }}">Read More</button>
           </div>
         </div>
       {% endfor %}
