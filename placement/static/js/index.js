@@ -19,3 +19,6 @@ $('.read-more').click(function() {
 $('.button-collapse').sideNav();
 
 $('.parallax').parallaxBackground();
+
+// alert($(document).height());
+// $(body).css('height', $(document).height() + 'px');

@@ -1,0 +1,30 @@
+.menu {
+  position: fixed;
+  z-index: 90;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.line {
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.navbar-transparent {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: none;
+}
+
+.navbar-default {
+  background-color: #3f3f3f;
+}
+
+.nav-link {
+  color: #bdbdbd;
+}
+
+.nav-link:hover {
+  color: #fff;
+}

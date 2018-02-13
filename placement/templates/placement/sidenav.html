@@ -71,4 +71,40 @@
               <li><a class="waves-effect" href="{% url 'placement:credits' %}">Website credits</a></li>
           </ul>
       </div>
+
+      <nav class="navbar navbar-transparent fixed-top navbar-expand-lg animated fadeIn">
+
+        <div data-activates="slide-out" class="menu button-collapse p-3">
+          <div class="line mb-2"></div>
+          <div class="line mb-2"></div>
+          <div class="line"></div>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarText">
+
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'placement:index' %}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'placement:announcements' %}">Announcements</a>
+            </li>
+          </ul>
+
+        </div>
+
+        <ul class="float-right">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url "admin:index" %}">Admin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'placement:contactUs' %}">Contact Us</a>
+          </li>
+        </ul>
+
+      </nav>
 {% endblock %}
