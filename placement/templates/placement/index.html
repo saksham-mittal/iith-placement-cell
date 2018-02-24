@@ -19,11 +19,11 @@
       <div class="container-fluid overlay m-0">
         <div class="container-fluid text-center">
 
-          <div class="img-container col-xl-2 offset-xl-5">
+          <div class="img-container col-xl-2 offset-xl-5 col-6 offset-3 col-md-4 offset-md-4 col-lg-2 offset-lg-5">
             <img src="{% static 'images/iithLogo.png' %}" id="logoImg">
           </div>
 
-          <div class="container-fluid col-xl-8 offset-xl-2 mt-4">
+          <div class="container-fluid col-xl-8 offset-xl-2 mt-4 col-md-6 offset-md-3">
             <h1 id="welcome-heading">Welcome to IITH Placement Office</h1>
           </div>
 
@@ -32,13 +32,13 @@
           </div>
 
           <div class="row mt-5">
-            <div class="col-xl-3 offset-xl-3">
+            <div class="col-xl-3 offset-xl-3 mb-2 col-md-4 offset-md-2">
                 <a href="http://www.iith.ac.in/aims/">
                   <div class="btn1 p-3" style="float: right; font-weight: 500;">STUDENT LOGIN</div>
                 </a>
             </div>
 
-            <div class="col-xl-3 offset-xl-0">
+            <div class="col-xl-3 offset-xl-0 col-md-4">
                 <a href="http://www.iith.ac.in/aims/login/employerLoginHome">
                   <div class="btn1 btn1_2 p-3" style="float: left;">RECRUITER LOGIN</div>
               </a>
@@ -49,7 +49,7 @@
       </div>
     </div>
 
-    <div class="container-fluid" id="director">
+    <div class="container-fluid" id="director" style="padding-bottom: 70px;">
       <div class="text-center">
         <p id="director-title">From Director’s Desk</p>
         <div id="dash"></div>
@@ -63,14 +63,13 @@
         </div>
         <div class="col-xl-8">
           <p style="font-size: 19px; padding-top: 20px;">In July 2017 IIT Hyderabad entered its 10th year. We have come a long way in the last 9 years. Academically, we are at the forefront of developing new curricula and new programs. We are also at the forefront of research and development. Our faculty student ratio is the best among all IITs -- 1:13. We have a very strong PG program. The rough ratio among Ph.D. students, Masters students and undergraduate students is 30:25:45. Our placement records is also very good -- in most departments all students get placed, with highest salary around 35 lakhs per annum.</p>
-          <!--<a href="{% url 'placement:announcements' %}">Announcement page</a>-->
         </div>
       </div>
     </div>
 
     <div id="links-container" class="container-fluid parallax p-0" data-parallax-bg-image="{% static 'images/links-back.jpg' %}" data-parallax-speed="0.9" data-parallax-direction="down">
       <div class="container-fluid overlay1 m-0 pl-0 pr-0 row">
-        <div class="col-xl-4 link-panel text-center">
+        <div class="col-xl-4 col-md-4 link-panel text-center">
           <a href="{% url 'placement:companies' %}">
             <div class="circle-panel">
               <i class="iconList icon ion-university"></i>
@@ -79,7 +78,7 @@
           </a>
         </div>
 
-        <div class="col-xl-4 link-panel text-center">
+        <div class="col-xl-4 col-md-4 link-panel text-center">
           <a href="{% url 'placement:announcements' %}">
             <div class="circle-panel">
               <i class="iconList icon ion-calendar"></i>
@@ -88,7 +87,7 @@
           </a>
         </div>
 
-        <div class="col-xl-4 link-panel text-center">
+        <div class="col-xl-4 col-md-4 link-panel text-center">
           <a href="{% url 'placement:statistics' %}">
             <div class="circle-panel">
               <i class="iconList icon ion-stats-bars"></i>
@@ -100,7 +99,7 @@
       </div>
     </div>
 
-    <div class="container-fluid" id="about-content">
+    <div class="container-fluid" style="padding-bottom: 70px;">
       <div class="text-center">
         <p id="director-title">About Us</p>
         <div id="dash"></div>

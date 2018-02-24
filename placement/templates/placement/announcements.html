@@ -42,6 +42,23 @@
             filter: blur(1px);
         }
 
+
+        @media (max-width: 700px) {
+
+          .announcement-heading {
+            font-size: 35px;
+          }
+
+        }
+
+        @media (max-width: 400px) {
+
+          .announcement-heading {
+            font-size: 29px;
+          }
+
+        }
+
     </style>
 
     <title>Anouncements|IITH Placement Cell</title>
@@ -62,7 +79,7 @@
     </div>
 
     <div class="fluid-container mb-0 pb-5" style="background-color: #F5F6F9;">
-      <div class="conatiner p-5 col-xl-8 offset-xl-2">
+      <div class="conatiner p-5 col-xl-8 offset-xl-2 col-12">
 
         {% for announcement in announcements %}
           <div class="announcement-container">

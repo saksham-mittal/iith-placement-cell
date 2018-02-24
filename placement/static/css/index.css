@@ -96,7 +96,6 @@ a, a:hover, a:visited {
 #director, #about-content {
   background-color: #F6F6F6;
   color: #423D3D;
-  height: 750px;
 }
 
 #director-title {
@@ -128,13 +127,8 @@ a, a:hover, a:visited {
   background-size: cover;
 }
 
-#links-container {
-  height: 450px;
-}
-
 .overlay1 {
   background-color: rgba(1, 1, 1, 0.5);
-  height: 450px;
 }
 
 .circle-panel {
@@ -149,6 +143,7 @@ a, a:hover, a:visited {
 }
 
 .link-panel {
+  padding-bottom: 80px;
   background-color: transparent;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -163,6 +158,34 @@ a, a:hover, a:visited {
   transition: all .3s ease;
 }
 
-#about-content {
-  height: 970px;
+@media (max-width: 1000px) {
+
+  #welcome-heading {
+    font-size: 52px;
+  }
+
+  #name-heading {
+    font-size: 14px;
+  }
+
+  .btn1 {
+    font-size: 13px;
+  }
+
+}
+
+@media (max-width: 370px) {
+
+  #welcome-heading {
+    font-size: 40px;
+  }
+
+  #name-heading {
+    font-size: 14px;
+  }
+
+  .btn1 {
+    font-size: 16px;
+  }
+
 }
