@@ -7,7 +7,7 @@ def index(request):
     return render(request, 'placement/index.html', {})
 
 def announcements(request):
-    announcements = Announcement.objects.filter(created_date__lte=timezone.now()).order_by('created_date')
+    announcements = Announcement.objects.filter(created_date__lte=timezone.now()).order_by('created_date').reverse()
     return render(request, 'placement/announcements.html', {'announcements' : announcements})
 
 def internships(request):
@@ -19,8 +19,14 @@ def selectionProcess(request):
 def studentLife(request):
     return render(request, 'placement/studentLife.html', {})
 
+def companies(request):
+    return render(request, 'placement/companies.html', {})
+
 def placementProcess(request):
     return render(request, 'placement/placementProcess.html', {})
+
+def statistics(request):
+    return render(request, 'placement/statistics.html', {})
 
 def hotelsnearIITH(request):
     return render(request, 'placement/hotelsnearIITH.html', {})

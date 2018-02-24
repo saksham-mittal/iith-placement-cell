@@ -6,8 +6,43 @@
 
     {% include 'placement/header.html' %}
 
-    <!-- Custom css -->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/announcements.css' %}">
+    <!-- External css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/externalCss.css' %}">
+
+    <style type="text/css">
+
+      .announcement-heading {
+        width: 100%;
+        letter-spacing: 0.75px;
+        color: #2a2a2a;
+        font-family: 'Lato', sans-serif;
+        font-size: 39px;
+        font-weight: bold;
+      }
+
+      #dash {
+        width: 80px;
+        height: 3px;
+        background-color: #2a2a2a;
+        margin: 0 auto;
+      }
+
+      .bg {
+            background: url({% static 'images/announcement1.jpg' %}) no-repeat center center;
+            position: fixed;
+            width: 100%;
+            height: 500px;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            -webkit-filter: blur(1px);
+            -moz-filter: blur(1px);
+            -o-filter: blur(1px);
+            -ms-filter: blur(1px);
+            filter: blur(1px);
+        }
+
+    </style>
 
     <title>Anouncements|IITH Placement Cell</title>
   </head>
@@ -15,9 +50,10 @@
 
     {% include 'placement/sidenav.html' %}
 
+    <div class="bg"></div>
     <div class="conatiner-fluid m-0 p-0 text-center" id="top-container">
       <div class="container-fluid col-xl-8 offset-xl-2">
-        <h1 id="welcome-heading">ANNOUNCEMENTS PAGE</h1>
+        <p id="welcome-heading">ANNOUNCEMENTS PAGE</p>
       </div>
 
       <div class="container-fluid col-xl-4 offset-xl-4 mt-2">
@@ -25,22 +61,24 @@
       </div>
     </div>
 
-    <div class="conatiner p-5 col-xl-8 offset-xl-2">
+    <div class="fluid-container mb-0 pb-5" style="background-color: #F5F6F9;">
+      <div class="conatiner p-5 col-xl-8 offset-xl-2">
 
-      {% for announcement in announcements %}
-        <div class="announcement-container bg-light">
-          <div class="text-center m-5 pt-3">
-            <h1 class="announcement-heading">{{ announcement.announcement_title }}</h1>
-            <div id="dash"></div>
+        {% for announcement in announcements %}
+          <div class="announcement-container">
+            <div class="text-center m-5 pt-3">
+              <p class="announcement-heading">{{ announcement.announcement_title }}</p>
+              <div id="dash"></div>
+            </div>
+            <p class="lead pl-5 pr-5" style="font-size: 17px;"><span style="font-weight: 600;">Date announced:</span><i> {{ announcement.created_date }}</i></p>
+            <div class="lead announcement-body pl-5 pr-5 pb-5 mb-5">
+              <p>{{ announcement.announcement_text|safe|truncatewords:"50" }}</p>
+              <button type="button" class="p-2 read-more" style="background-color: #cad2d9; border-radius: 4px; border: none; font-size: 15px; color: #3f3f3f;" value="{{ announcement.announcement_text|safe|linebreaks }}">Read More</button>
+            </div>
           </div>
-          <p class="lead pl-5 pr-5" style="font-size: 17px;"><span style="font-weight: 600;">Date announced:</span><i> {{ announcement.created_date }}</i></p>
-          <div class="lead announcement-body pl-5 pr-5 pb-5 mb-5">
-            <p>{{ announcement.announcement_text|safe|truncatewords:"50" }}</p>
-            <button type="button" class="p-2 read-more" style="background-color: #cad2d9; border-radius: 4px; border: none; font-size: 15px; color: #3f3f3f;" value="{{ announcement.announcement_text|safe|linebreaks }}">Read More</button>
-          </div>
-        </div>
-      {% endfor %}
+        {% endfor %}
 
+      </div>
     </div>
 
     {% include 'placement/footer.html' %}

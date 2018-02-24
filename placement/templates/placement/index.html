@@ -71,25 +71,32 @@
     <div id="links-container" class="container-fluid parallax p-0" data-parallax-bg-image="{% static 'images/links-back.jpg' %}" data-parallax-speed="0.9" data-parallax-direction="down">
       <div class="container-fluid overlay1 m-0 pl-0 pr-0 row">
         <div class="col-xl-4 link-panel text-center">
-          <div class="circle-panel">
-            <i class="iconList icon ion-university"></i>
-          </div>
-          <p style="font-size: 25px; color: #a8a8a8; letter-spacing: 1.2px; margin-top: 30px; -webkit-transition: all 0.5s ease; transition: all 0.5s ease;">COMPANIES<p>
+          <a href="{% url 'placement:companies' %}">
+            <div class="circle-panel">
+              <i class="iconList icon ion-university"></i>
+            </div>
+            <p style="font-size: 25px; color: #a8a8a8; letter-spacing: 1.2px; margin-top: 30px; -webkit-transition: all 0.5s ease; transition: all 0.5s ease;">COMPANIES<p>
+          </a>
         </div>
 
         <div class="col-xl-4 link-panel text-center">
-          <div class="circle-panel">
-            <i class="iconList icon ion-calendar"></i>
-          </div>
-          <p style="font-size: 25px; color: #a8a8a8; letter-spacing: 1.2px; margin-top: 30px; -webkit-transition: all 0.5s ease; transition: all 0.5s ease;">ANNOUNCEMENTS<p>
+          <a href="{% url 'placement:announcements' %}">
+            <div class="circle-panel">
+              <i class="iconList icon ion-calendar"></i>
+            </div>
+            <p style="font-size: 25px; color: #a8a8a8; letter-spacing: 1.2px; margin-top: 30px; -webkit-transition: all 0.5s ease; transition: all 0.5s ease;">ANNOUNCEMENTS<p>
+          </a>
         </div>
 
         <div class="col-xl-4 link-panel text-center">
-          <div class="circle-panel">
-            <i class="iconList icon ion-stats-bars"></i>
-          </div>
-          <p style="font-size: 25px; color: #a8a8a8; letter-spacing: 1.2px; margin-top: 30px; -webkit-transition: all 0.5s ease; transition: all 0.5s ease;">STATISTICS<p>
+          <a href="{% url 'placement:statistics' %}">
+            <div class="circle-panel">
+              <i class="iconList icon ion-stats-bars"></i>
+            </div>
+            <p style="font-size: 25px; color: #a8a8a8; letter-spacing: 1.2px; margin-top: 30px; -webkit-transition: all 0.5s ease; transition: all 0.5s ease;">STATISTICS<p>
+          </a>
         </div>
+
       </div>
     </div>
 

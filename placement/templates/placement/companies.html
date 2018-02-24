@@ -1,0 +1,171 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        {% include 'placement/header.html' %}
+
+        <title>Placement Process|IITH Placement Cell</title>
+
+        <!-- Custom css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/externalCss.css' %}">
+
+        <style type="text/css">
+
+          .bg {
+                background: url({% static 'images/companies.png' %}) no-repeat center center;
+                position: fixed;
+                width: 100%;
+                height: 500px;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                -webkit-filter: blur(1px);
+                -moz-filter: blur(1px);
+                -o-filter: blur(1px);
+                -ms-filter: blur(1px);
+                filter: blur(1px);
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+      {% include 'placement/sidenav.html' %}
+
+        <div class="bg"></div>
+        <div class="container-fluid p-0 mb-0 text-center" id="top-container">
+          <div class="container-fluid col-xl-8 offset-xl-2">
+            <p id="welcome-heading">Companies</p>
+          </div>
+
+          <div class="container-fluid col-xl-4 offset-xl-4 mt-2">
+            <p id="name-heading">Indian Institute of Technology Hyderabad</p>
+          </div>
+        </div>
+
+        <div class="fluid-container pb-5" style="background-color: #F5F6F9; padding-top: 100px;">
+          <div class="container content-process lead pb-5">
+              The placements at Indian Institute of Technology Hyderabad for the academic year 2016–2017 have yielded 264 offers. There were 385 students registered for placements last year. A total of 210+ companies have registered for the placement process. out of them, 117+ have made it to the campus and interacted with the students of B.Tech., M.Tech., M.Des., M.Sc. and Ph.D across 14 departments.
+              <br><br>
+              During this year some new companies have made their entry to IITH. The top paying companies were Rakuten, Yahoo Japan and SMS Data tech. The highest salary offered for this year is Rs.38 LPA and the average salary is Rs.11.44 LPA. There were seventeen international offers.A good number of students from UG, PG and M.Sc. have opted for higher education in India and abroad.<br><br>
+              <center><h1 class="mt-4 mb-5 pb-3 heading-recruitment">COMPANIES</h1></center>
+              <div class="row">
+                  <div class="col-4">
+                      Aarvee Associates<br><br>
+                      Accenture<br><br>
+                      Accolite<br><br>
+                      Adobe Systems<br><br>
+                      Altair<br><br>
+                      Amazon<br><br>
+                      AMD Bangalore<br><br>
+                      Amrita University<br><br>
+                      Analog Devices<br><br>
+                      Bank of America<br><br>
+                      BDL<br><br>
+                      Belcan<br><br>
+                      Benz<br><br>
+                      Bombardier<br><br>
+                      Boston Scientific<br><br>
+                      BPCL<br><br>
+                      Cap Gemini<br><br>
+                      Capital Dynamics<br><br>
+                      CEWIT<br><br>
+                      Code Nation<br><br>
+                      Cookpad<br><br>
+                      CTS<br><br>
+                      Cyient<br><br>
+                      Dell<br><br>
+                      Deloitte<br><br>
+                      Deshaw<br><br>
+                      Direct i<br><br>
+                      Eaton<br><br>
+                      EFI Bangalore<br><br>
+                      Evalueserve<br><br>
+                      FIITJEE<br><br>
+                      Finiser<br><br>
+                      Futures First<br><br>
+                      GAP INC<br><br>
+                  </div>
+                  <div class="col-4">
+                      Geny Medium<br><br>
+                      Headout<br><br>
+                      Hexagon<br><br>
+                      Honeywell<br><br>
+                      HPCL<br><br>
+                      I Concept<br><br>
+                      Infosys<br><br>
+                      ISRO<br><br>
+                      L&T Constructions<br><br>
+                      Leoforce<br><br>
+                      Mahindra & Mahindra<br><br>
+                      MAQ software<br><br>
+                      Marvell Semi- Conductortor<br><br>
+                      Mathwork<br><br>
+                      Maxim Integrated<br><br>
+                      Mediatek<br><br>
+                      Meeami Technologies<br><br>
+                      Microsoft<br><br>
+                      Microsoft IDC<br><br>
+                      Mobile Iron<br><br>
+                      MPR Refractors<br><br>
+                      MRF<br><br>
+                      Murata Electronics Singapore<br><br>
+                      NFTDC<br><br>
+                      NLCC<br><br>
+                      Oracle<br><br>
+                      Orbees<br><br>
+                      PayPal<br><br>
+                      Periyar Maniammai University<br><br>
+                      Progress Software<br><br>
+                      PTC Software<br><br>
+                      Qolsys<br><br>
+                      Qualcomm<br><br>
+                      Rakuten<br><br>
+                  </div>
+                  <div class="col-4">
+                      Red Pine<br><br>
+                      Sahajanand<br><br>
+                      Sales Force<br><br>
+                      Samsung Bangalore<br><br>
+                      Samsung Delhi<br><br>
+                      Scrum Do<br><br>
+                      Service Now<br><br>
+                      sigmoid Analytics<br><br>
+                      Smart prix<br><br>
+                      Smartron<br><br>
+                      Sms Data Tech<br><br>
+                      Strata Geo systems<br><br>
+                      Stryker<br><br>
+                      Tata Motors<br><br>
+                      Tata Steel<br><br>
+                      TCS<br><br>
+                      Teach For India<br><br>
+                      Tesco<br><br>
+                      Think I<br><br>
+                      UHG<br><br>
+                      United Health Group<br><br>
+                      Uurmi<br><br>
+                      Vedanta<br><br>
+                      Virtusa<br><br>
+                      Walmart<br><br>
+                      Wells Fargo<br><br>
+                      Works Application<br><br>
+                      Yahoo Japan<br><br>
+                      Zuti Engg<br><br>
+                  </div>
+              </div>
+
+          </div>
+        </div>
+
+
+        {% include 'placement/footer.html' %}
+
+    </body>
+
+</html>

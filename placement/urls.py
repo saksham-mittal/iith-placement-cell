@@ -13,4 +13,6 @@ urlpatterns = [
     url(r'^hotelsnearIITH/', views.hotelsnearIITH, name='hotelsnearIITH'),
     url(r'^contactUs/', views.contactUs, name='contactUs'),
     url(r'^credits/', views.credits, name='credits'),
+    url(r'^companies/', views.companies, name='companies'),
+    url(r'^statistics/', views.statistics, name='statistics'),
 ]
